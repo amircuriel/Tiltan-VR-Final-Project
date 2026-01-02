@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639024426786592665
-    m_Hash: 3372175736
+      ticks: 639029450294793941
+    m_Hash: 2548130889
   m_LockFileStatus:
     m_FilePath: C:/Users/amirc/Unity Projects/Tiltan VR Final Project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639024426786638159
-    m_Hash: 722411496
+      ticks: 639029450294793941
+    m_Hash: 104165139
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

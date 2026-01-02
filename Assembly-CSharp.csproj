@@ -54,8 +54,8 @@
     <Compile Include="Assets\Scripts\ClayLauncherButton.cs" />
     <Compile Include="Assets\Scripts\ClayTarget.cs" />
     <Compile Include="Assets\Scripts\InputTest.cs" />
-    <Compile Include="Assets\Scripts\VRGun.cs" />
     <Compile Include="Assets\Scripts\VRPushButton.cs" />
+    <Compile Include="Assets\Scripts\VRGun.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
