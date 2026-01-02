@@ -4,16 +4,18 @@ using UnityEngine;
 public class ScoreUI : MonoBehaviour
 {
     [SerializeField] private TMP_Text _scoreText;
-    [SerializeField] private GameObject _winPanel;
+    [SerializeField] private GameObject _winPanel, _losePanel;
 
     private void Start()
     {
         if (_winPanel != null) _winPanel.SetActive(false);
+        if (_losePanel != null) _losePanel.SetActive(false);
 
         if (ScoreManager.Instance != null)
         {
             ScoreManager.Instance.ScoreChanged += OnScoreChanged;
             ScoreManager.Instance.GameWon += OnGameWon;
+            ScoreManager.Instance.GameLost += OnGameLost;
 
             // Initialize display
             OnScoreChanged(ScoreManager.Instance.Score);
@@ -26,6 +28,7 @@ public class ScoreUI : MonoBehaviour
         {
             ScoreManager.Instance.ScoreChanged -= OnScoreChanged;
             ScoreManager.Instance.GameWon -= OnGameWon;
+            ScoreManager.Instance.GameLost -= OnGameLost;
         }
     }
 
@@ -34,11 +37,16 @@ public class ScoreUI : MonoBehaviour
         if (_scoreText == null) return;
 
         int target = ScoreManager.Instance != null ? ScoreManager.Instance.TargetScore : 10;
-        _scoreText.text = $"Score: {score}/{target}";
+        _scoreText.text = $"{score}/{target}";
     }
 
     private void OnGameWon()
     {
         if (_winPanel != null) _winPanel.SetActive(true);
+    }
+    
+    private void OnGameLost()
+    {
+        if (_winPanel != null) _losePanel.SetActive(true);
     }
 }

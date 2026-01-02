@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -6,6 +7,9 @@ public class VRPushButton : MonoBehaviour
 {
     [Header("Button Parts")]
     [SerializeField] private Transform _buttonVisual;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private Material _activeMaterial, _inactiveMaterial;
+    [SerializeField] private Renderer _renderer;
 
     [Header("Movement")]
     [SerializeField] private float _pressDepth = 0.03f;
@@ -20,10 +24,13 @@ public class VRPushButton : MonoBehaviour
     private Vector3 _initialLocalPos;
     private float _currentPress;
     private bool _hasFired;
+    private bool firstTimeActivation;
 
     private void Awake()
     {
         _initialLocalPos = _buttonVisual.localPosition;
+        firstTimeActivation = true;
+        _renderer.material = _activeMaterial;
     }
 
     private void Update()
@@ -52,8 +59,12 @@ public class VRPushButton : MonoBehaviour
 
         if (!_hasFired && pressAmount >= _pressThreshold)
         {
+            _audioSource.Play();
             _hasFired = true;
+            if (!firstTimeActivation) return;
             OnPressed?.Invoke();
+            firstTimeActivation = false;
+            _renderer.material = _inactiveMaterial;
         }
     }
 

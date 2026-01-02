@@ -1,8 +1,12 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class VRGun : MonoBehaviour
 {
+    [Header("Interactable")]
+    [SerializeField] private XRGrabInteractable _interactor;
+    
     [Header("Muzzle")]
     [SerializeField] private Transform _muzzle;
 
@@ -14,6 +18,7 @@ public class VRGun : MonoBehaviour
     [Header("Input")]
     [SerializeField] private InputActionProperty _fireAction;    // trigger
     [SerializeField] private InputActionProperty _reloadAction;  // button
+    [SerializeField] private InputActionProperty _summonGunAction;
 
     [Header("Fire Settings")]
     [SerializeField] private float _fireCooldown = 0.15f;
@@ -40,7 +45,7 @@ public class VRGun : MonoBehaviour
     private int _ammo;
     private static readonly int Reload = Animator.StringToHash("Reload");
     
-    private bool CanFire => Time.time > _lastFireTime + _fireCooldown && !_isReloading;
+    private bool CanFire => Time.time > _lastFireTime + _fireCooldown && !_isReloading && _interactor.isSelected;
 
     private void Awake()
     {
@@ -61,6 +66,12 @@ public class VRGun : MonoBehaviour
             _reloadAction.action.Enable();
             _reloadAction.action.performed += OnReload;
         }
+        
+        if (_summonGunAction.action != null)
+        {
+            _summonGunAction.action.Enable();
+            _summonGunAction.action.performed += OnSummonGun;
+        }
     }
 
     private void OnDisable()
@@ -75,6 +86,12 @@ public class VRGun : MonoBehaviour
         {
             _reloadAction.action.performed -= OnReload;
             _reloadAction.action.Disable();
+        }
+        
+        if (_summonGunAction.action != null)
+        {
+            _summonGunAction.action.performed -= OnSummonGun;
+            _summonGunAction.action.Disable();
         }
     }
 
@@ -141,11 +158,10 @@ public class VRGun : MonoBehaviour
                 Destroy(fx.gameObject, _hitVFXLifetime);
             }
 
-            ClayTarget clay = hit.collider.GetComponentInParent<ClayTarget>();
-            if (clay != null)
+            IHittable target = hit.collider.GetComponentInParent<IHittable>();
+            if (target != null)
             {
-                clay.Break();
-                ScoreManager.Instance?.AddPoint(1);
+                target.OnHit();
             }
         }
     }
@@ -156,6 +172,13 @@ public class VRGun : MonoBehaviour
         {
             StartCoroutine(ReloadRoutine());
         }
+    }
+    
+    private void OnSummonGun(InputAction.CallbackContext ctx)
+    {
+        if (_interactor.isSelected) return;
+        var transform1 = PlayerManager.Instance.transform;
+        transform.position = transform1.position + transform1.forward * 2f + Vector3.up * 2;
     }
 
     private System.Collections.IEnumerator ReloadRoutine()

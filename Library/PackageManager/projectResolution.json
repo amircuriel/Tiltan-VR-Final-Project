@@ -29,6 +29,16 @@
       "source": "registry",
       "testable": false
     },
+    "com.unity.device-simulator.devices@1.0.1": {
+      "name": "com.unity.device-simulator.devices",
+      "displayName": "Device Simulator Devices",
+      "resolvedPath": "C:\\Users\\amirc\\Unity Projects\\Tiltan VR Final Project\\Library\\PackageCache\\com.unity.device-simulator.devices@2af643ceec84",
+      "fingerprint": "2af643ceec844f09b4ee3406553b2470148f8301",
+      "editorCompatibility": "2022.1.0a1",
+      "version": "1.0.1",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.feature.vr@1.0.1": {
       "name": "com.unity.feature.vr",
       "displayName": "VR",

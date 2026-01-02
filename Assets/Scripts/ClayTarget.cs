@@ -1,39 +1,59 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
-public class ClayTarget : MonoBehaviour
+public interface IHittable
+{
+    public void OnHit();
+}
+
+public class ClayTarget : MonoBehaviour, IHittable
 {
     [Header("Hit FX")]
-    [SerializeField] private ParticleSystem _breakVFXPrefab;
+    [SerializeField] private ParticleSystem _breakVFX;
     [SerializeField] private AudioClip _breakSound;
-    [SerializeField] private float _breakVFXLifetime = 2.5f;
-
-    [Header("Auto Cleanup")]
-    [SerializeField] private float _maxLifetime = 12f;
-
+    [SerializeField] private Collider _collider;
+    [SerializeField] private MeshRenderer _meshRenderer;
+    [SerializeField] private Rigidbody _rb;
     private bool _broken;
 
-    private void Start()
+    private void OnEnable()
     {
-        if (_maxLifetime > 0f)
-            Destroy(gameObject, _maxLifetime);
+        _collider.enabled = _meshRenderer.enabled = true;
+        _broken = false;
     }
 
-    public void Break()
+    public void OnHit()
+    {
+        Break(true);
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        Break(false);
+    }
+
+    [ContextMenu("Break")]
+    private void Break(bool fromShot)
     {
         if (_broken) return;
         _broken = true;
+        _collider.enabled = _meshRenderer.enabled = _rb.useGravity = false;
 
-        if (_breakVFXPrefab != null)
+        if (_breakVFX != null)
         {
-            ParticleSystem fx = Instantiate(_breakVFXPrefab, transform.position, transform.rotation);
-            Destroy(fx.gameObject, _breakVFXLifetime);
+            _breakVFX.Play();
         }
 
         if (_breakSound != null)
         {
             AudioSource.PlayClipAtPoint(_breakSound, transform.position, 1f);
         }
+        
+        if (fromShot) ScoreManager.Instance.AddPoint();
+        else ScoreManager.Instance.OnPotGone();
 
-        Destroy(gameObject);
+        
+        Destroy(gameObject, 5f);
     }
 }
