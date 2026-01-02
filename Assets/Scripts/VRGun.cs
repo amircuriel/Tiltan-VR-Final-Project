@@ -178,7 +178,7 @@ public class VRGun : MonoBehaviour
     {
         if (_interactor.isSelected) return;
         var transform1 = PlayerManager.Instance.transform;
-        transform.position = transform1.position + transform1.forward * 2f + Vector3.up * 2;
+        transform.position = transform1.position + transform1.forward * 0.3f + Vector3.up * 2;
     }
 
     private System.Collections.IEnumerator ReloadRoutine()

@@ -49,13 +49,14 @@ public class VRPushButton : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        if (other.gameObject.layer != LayerMask.NameToLayer("Hand")) return;
         Vector3 localPoint = transform.InverseTransformPoint(other.ClosestPoint(transform.position));
-        float pressAmount = Mathf.Clamp01(-localPoint.z / _pressDepth);
+        float pressAmount = Mathf.Clamp01(-localPoint.y / _pressDepth);
 
         _currentPress = pressAmount;
 
         _buttonVisual.localPosition =
-            _initialLocalPos + Vector3.back * (_pressDepth * pressAmount);
+            _initialLocalPos + Vector3.down * (_pressDepth * pressAmount);
 
         if (!_hasFired && pressAmount >= _pressThreshold)
         {
@@ -70,6 +71,7 @@ public class VRPushButton : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        if (other.gameObject.layer != LayerMask.NameToLayer("Hand")) return;
         _currentPress = 0f;
     }
 }

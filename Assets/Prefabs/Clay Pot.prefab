@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 58433422846470305}
   - component: {fileID: 3319846965811173053}
   - component: {fileID: 7926712167669572105}
+  - component: {fileID: 2646842413481293115}
   m_Layer: 0
   m_Name: Clay Pot
   m_TagString: Untagged
@@ -110,7 +111,6 @@ MonoBehaviour:
   _collider: {fileID: 7926712167669572105}
   _meshRenderer: {fileID: 4048342953652539905}
   _rb: {fileID: 3319846965811173053}
-  _maxLifetime: 10000
 --- !u!54 &3319846965811173053
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -160,6 +160,27 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 09cc238bd856b5d468789a6d2d0f48ed, type: 3}
+--- !u!135 &2646842413481293115
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3210444414621699212}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.53
+  m_Center: {x: 0.00064440066, y: 0.33735934, z: -0.00000002980232}
 --- !u!1 &8760982268664979573
 GameObject:
   m_ObjectHideFlags: 0
