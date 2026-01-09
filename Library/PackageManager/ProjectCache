@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639029508831856772
-    m_Hash: 403883877
+      ticks: 639035520825740779
+    m_Hash: 1364848358
   m_LockFileStatus:
     m_FilePath: C:/Users/amirc/Unity Projects/Tiltan VR Final Project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639029508831906630
-    m_Hash: 1744465549
+      ticks: 639035520825883039
+    m_Hash: 4176217704
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,139 @@ m_LocalPackages:
 m_ProjectPath: C:/Users/amirc/Unity Projects/Tiltan VR Final Project/Packages
 m_EditorVersion: 6000.2.8f1 (c9992ac36c34)
 m_ResolvedPackages:
+- packageId: com.meta.xr.sdk.core@83.0.1
+  testable: 0
+  isDirectDependency: 1
+  version: 83.0.1
+  source: 1
+  resolvedPath: C:\Users\amirc\Unity Projects\Tiltan VR Final Project\Library\PackageCache\com.meta.xr.sdk.core@06273138c40d
+  assetPath: Packages/com.meta.xr.sdk.core
+  name: com.meta.xr.sdk.core
+  displayName: Meta XR Core SDK
+  author:
+    name: Meta Platforms, Inc.
+    email: 
+    url: https://developers.meta.com/horizon/
+  category: 
+  type: 
+  description: Meta XR Core SDK package provides the latest features to create immersive
+    experiences for Meta XR devices.
+  errors: []
+  versions:
+    all:
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    - 68.0.3
+    - 69.0.0
+    - 69.0.1
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 74.0.1
+    - 74.0.2
+    - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    compatible:
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    - 68.0.3
+    - 69.0.0
+    - 69.0.1
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 74.0.1
+    - 74.0.2
+    - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    recommended: 
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - XR
+  - Quest
+  - SDK
+  - Utilities
+  - Meta
+  - Oculus
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 2
+  isAssetStorePackage: 1
+  datePublishedTicks: 639017949741290000
+  documentationUrl: https://developer.oculus.com/documentation/unity/
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  assetStore:
+    productId: 269169
+  fingerprint: 06273138c40db89a6f0d4d2a5d4f75656f2de879
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 59.0.0
+    minimumUnityVersion: 2022.3.15f1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.ai.navigation@2.0.9
   testable: 0
   isDirectDependency: 1
@@ -1704,326 +1837,6 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.xr.arfoundation@6.2.1
-  testable: 0
-  isDirectDependency: 1
-  version: 6.2.1
-  source: 1
-  resolvedPath: C:\Users\amirc\Unity Projects\Tiltan VR Final Project\Library\PackageCache\com.unity.xr.arfoundation@9febd5ccae7a
-  assetPath: Packages/com.unity.xr.arfoundation
-  name: com.unity.xr.arfoundation
-  displayName: AR Foundation
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: AR Foundation enables you to create multi-platform augmented reality
-    (AR) apps with Unity. To learn more about AR Foundation, click the Documentation
-    link above.
-  errors: []
-  versions:
-    all:
-    - 1.0.0-preview.12
-    - 1.0.0-preview.13
-    - 1.0.0-preview.14
-    - 1.0.0-preview.17
-    - 1.0.0-preview.18
-    - 1.0.0-preview.19
-    - 1.0.0-preview.20
-    - 1.0.0-preview.22
-    - 1.1.0-preview.6
-    - 1.5.0-preview.2
-    - 1.5.0-preview.5
-    - 1.5.0-preview.6
-    - 1.5.0-preview.7
-    - 2.0.2
-    - 2.1.0-preview.2
-    - 2.1.0-preview.3
-    - 2.1.1
-    - 2.1.3
-    - 2.1.4
-    - 2.1.8
-    - 2.1.10
-    - 2.1.14
-    - 2.1.16
-    - 2.1.18
-    - 2.1.19
-    - 2.2.0-preview.2
-    - 2.2.0-preview.3
-    - 2.2.0-preview.6
-    - 3.0.0-preview.1
-    - 3.0.0-preview.2
-    - 3.0.0-preview.3
-    - 3.0.0-preview.4
-    - 3.0.0-preview.6
-    - 3.0.1
-    - 3.1.0-preview.1
-    - 3.1.0-preview.3
-    - 3.1.0-preview.4
-    - 3.1.0-preview.6
-    - 3.1.0-preview.7
-    - 3.1.0-preview.8
-    - 3.1.3
-    - 3.1.5
-    - 3.1.6
-    - 3.1.10
-    - 4.0.0-preview.1
-    - 4.0.0-preview.3
-    - 4.0.2
-    - 4.0.8
-    - 4.0.9
-    - 4.0.10
-    - 4.0.12
-    - 4.1.0-preview.1
-    - 4.1.0-preview.2
-    - 4.1.0-preview.3
-    - 4.1.0-preview.5
-    - 4.1.0-preview.6
-    - 4.1.0-preview.7
-    - 4.1.0-preview.9
-    - 4.1.0-preview.10
-    - 4.1.0-preview.11
-    - 4.1.0-preview.12
-    - 4.1.0-preview.13
-    - 4.1.1
-    - 4.1.3
-    - 4.1.5
-    - 4.1.7
-    - 4.1.9
-    - 4.1.10
-    - 4.1.12
-    - 4.1.13
-    - 4.2.0-pre.2
-    - 4.2.0-pre.3
-    - 4.2.0-pre.4
-    - 4.2.0-pre.5
-    - 4.2.0-pre.7
-    - 4.2.0-pre.8
-    - 4.2.0-pre.9
-    - 4.2.0-pre.10
-    - 4.2.0-pre.12
-    - 4.2.0
-    - 4.2.1
-    - 4.2.2
-    - 4.2.3
-    - 4.2.6
-    - 4.2.7
-    - 4.2.8
-    - 4.2.9
-    - 4.2.10
-    - 5.0.0-pre.5
-    - 5.0.0-pre.6
-    - 5.0.0-pre.7
-    - 5.0.0-pre.8
-    - 5.0.0-pre.9
-    - 5.0.0-pre.12
-    - 5.0.0-pre.13
-    - 5.0.2
-    - 5.0.3
-    - 5.0.4
-    - 5.0.5
-    - 5.0.6
-    - 5.0.7
-    - 5.1.0-pre.1
-    - 5.1.0-pre.2
-    - 5.1.0-pre.3
-    - 5.1.0-pre.4
-    - 5.1.0-pre.6
-    - 5.1.0-pre.8
-    - 5.1.0-pre.9
-    - 5.1.0-pre.10
-    - 5.1.0
-    - 5.1.1
-    - 5.1.2
-    - 5.1.3
-    - 5.1.4
-    - 5.1.5
-    - 5.1.6
-    - 5.2.0
-    - 6.0.0-pre.3
-    - 6.0.0-pre.4
-    - 6.0.0-pre.5
-    - 6.0.0-pre.6
-    - 6.0.0-pre.7
-    - 6.0.0-pre.8
-    - 6.0.1
-    - 6.0.2
-    - 6.0.3
-    - 6.0.4
-    - 6.0.5
-    - 6.0.6
-    - 6.1.0-pre.1
-    - 6.1.0-pre.2
-    - 6.1.0-pre.3
-    - 6.1.0-pre.4
-    - 6.1.0-pre.5
-    - 6.1.0
-    - 6.1.1
-    - 6.2.0-pre.1
-    - 6.2.0-pre.2
-    - 6.2.0-pre.3
-    - 6.2.0-pre.4
-    - 6.2.0
-    - 6.2.1
-    - 6.3.0-pre.1
-    - 6.3.0-pre.2
-    - 6.3.0
-    - 6.3.1
-    - 6.4.0-pre.1
-    - 6.4.0
-    - 6.4.1
-    compatible:
-    - 6.2.0
-    - 6.2.1
-    - 6.3.0-pre.1
-    - 6.3.0-pre.2
-    - 6.3.0
-    - 6.3.1
-    - 6.4.0-pre.1
-    - 6.4.0
-    - 6.4.1
-    recommended: 6.2.1
-    deprecated: []
-  dependencies:
-  - name: com.unity.ugui
-    version: 2.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.inputsystem
-    version: 1.6.3
-  - name: com.unity.mathematics
-    version: 1.2.6
-  - name: com.unity.xr.core-utils
-    version: 2.5.1
-  - name: com.unity.xr.management
-    version: 4.4.0
-  - name: com.unity.editorcoroutines
-    version: 1.0.0
-  - name: com.unity.modules.particlesystem
-    version: 1.0.0
-  - name: com.unity.modules.unityanalytics
-    version: 1.0.0
-  - name: com.unity.modules.unitywebrequest
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.ugui
-    version: 2.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.inputsystem
-    version: 1.14.2
-  - name: com.unity.modules.uielements
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.hierarchycore
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.mathematics
-    version: 1.3.2
-  - name: com.unity.xr.core-utils
-    version: 2.5.3
-  - name: com.unity.modules.xr
-    version: 1.0.0
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  - name: com.unity.xr.management
-    version: 4.5.1
-  - name: com.unity.modules.vr
-    version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.12
-  - name: com.unity.editorcoroutines
-    version: 1.0.0
-  - name: com.unity.modules.particlesystem
-    version: 1.0.0
-  - name: com.unity.modules.unityanalytics
-    version: 1.0.0
-  - name: com.unity.modules.unitywebrequest
-    version: 1.0.0
-  keywords:
-  - xreditorsubsystem
-  - xr
-  - ar
-  - augmented
-  - mixed
-  - reality
-  - foundation
-  - core
-  - subsystem
-  - simulation
-  - visualscripting
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638986730793460000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@6.2/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
-    revision: f212e6049e3267639b1a2d398b04270db47a6bc6
-    path: 
-  unityLifecycle:
-    version: 6.2.0
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 1
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fixed a typo in `Feature.ToStringList`.\n-
-    Fixed the XR Environment view so that it no longer sets the title of the Scene
-    view to null if you launch the Editor with the XR Environment overlay open. ([ARFB-592](https://issuetracker.unity3d.com/issues/installing-ar-foundation-package-corrupts-scene-view-tab-text))\n-
-    Fixed the XR Environment overlay so that it no longer causes \"Unable to load
-    the Icon\" errors in the Console when AR Foundation is first installed to a project.
-    ([ARFB-593](https://issuetracker.unity3d.com/issues/unable-to-load-the-icon-errors-are-thrown-in-the-console-after-installing-ar-foundation-package))\n-
-    Fixed an internal utility that could incorrectly cache references to destroyed
-    subsystems, which in turn could cause bugs if you deinitialized and re-initialized
-    the `SimulationLoader`.\n- Fixed `XRAnchor.Equals` so that it considers the anchor''s
-    `parentId` when comparing for equality.\n- Fixed an issue where disabling the
-    AROcclusionManager could cause some objects to become incorrectly occluded for
-    ARCore and ARKit apps.\n- Fixed `LoaderUtility` so that it correctly initializes
-    or deinitializes the OpenXR Loader when you call `Initialize` or `Deinitialize`,
-    respectfully.\n- Fixed the following methods of [XRBoundingBox](xref:UnityEngine.XR.ARSubsystems.XRBoundingBox):\n 
-    - `ToString` now lists the struct members in the order they appear in the stuct\n 
-    - `Equals` now correctly considers a bounding box''s `parentId` when comparing
-    for equality\n  - `GetHashCode` now correctly considers a bounding box''s `parentId`
-    when generating a hash code."}'
-  assetStore:
-    productId: 
-  fingerprint: 9febd5ccae7a6e7cbeee029185edd452a91239df
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 6.2.0
-    minimumUnityVersion: 6000.0.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
 - packageId: com.unity.xr.hands@1.7.2
   testable: 0
   isDirectDependency: 1
@@ -2181,6 +1994,186 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
+- packageId: com.unity.xr.meta-openxr@2.3.0
+  testable: 0
+  isDirectDependency: 1
+  version: 2.3.0
+  source: 1
+  resolvedPath: C:\Users\amirc\Unity Projects\Tiltan VR Final Project\Library\PackageCache\com.unity.xr.meta-openxr@a8b13ad920dd
+  assetPath: Packages/com.unity.xr.meta-openxr
+  name: com.unity.xr.meta-openxr
+  displayName: Unity OpenXR Meta
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Enables you to build mixed reality apps for Meta Quest devices by
+    implementing support for Meta's OpenXR extensions.
+  errors: []
+  versions:
+    all:
+    - 0.1.1
+    - 0.1.2
+    - 0.2.1
+    - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.0.3
+    - 1.0.4
+    - 2.0.0-pre.1
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.1.0-pre.1
+    - 2.1.0
+    - 2.1.1
+    - 2.2.0-pre.1
+    - 2.2.0
+    - 2.2.1
+    - 2.3.0-pre.2
+    - 2.3.0
+    - 2.4.0-pre.1
+    - 2.4.0
+    compatible:
+    - 2.2.1
+    - 2.3.0-pre.2
+    - 2.3.0
+    - 2.4.0-pre.1
+    - 2.4.0
+    recommended: 2.3.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.xr.openxr
+    version: 1.15.1
+  - name: com.unity.xr.core-utils
+    version: 2.5.1
+  - name: com.unity.xr.management
+    version: 4.4.0
+  - name: com.unity.xr.arfoundation
+    version: 6.3.0
+  - name: com.unity.xr.compositionlayers
+    version: 2.1.1
+  resolvedDependencies:
+  - name: com.unity.xr.openxr
+    version: 1.15.1
+  - name: com.unity.inputsystem
+    version: 1.14.2
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.xr.core-utils
+    version: 2.5.3
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.xr.management
+    version: 4.5.1
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.12
+  - name: com.unity.xr.arfoundation
+    version: 6.3.0
+  - name: com.unity.ugui
+    version: 2.0.0
+  - name: com.unity.mathematics
+    version: 1.3.2
+  - name: com.unity.editorcoroutines
+    version: 1.0.0
+  - name: com.unity.modules.particlesystem
+    version: 1.0.0
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.xr.compositionlayers
+    version: 2.1.1
+  keywords:
+  - xreditorsubsystem
+  - openxr
+  - meta
+  - oculus
+  - xr
+  - vr
+  - mr
+  - virtual
+  - reality
+  - rift
+  - quest
+  - arfoundation
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638952110895360000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.meta-openxr@2.3/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/xr.sdk.meta-openxr.git
+    revision: f044a6b1ce6f100989ee8bf5aa0cfe54c87bb368
+    path: 
+  unityLifecycle:
+    version: 2.2.1
+    nextVersion: 
+    recommendedVersion: 2.3.0
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Changed\n\n- Changed the minimum AR Foundation
+    dependency version from 6.3.0-pre.2 to 6.3.0, upgrading to a verified release
+    version.\n- Changed the minimum XR Composition Layers dependency version from
+    2.1.0 to 2.1.1 to ensure that you receive necessary bug fixes.\n- Changed the
+    minimum OpenXR Plug-in dependency version from 1.16.0-pre.1 to 1.15.1. Test code
+    that depends on OpenXR Plug-in 1.16 is now conditionally compiled with a version
+    define so we can depend on the verified 1.15 release.\n\n### Fixed\n\n- Fixed
+    `MetaOpenXRAnchorSubsystem` so that `TryEraseAnchorsAsync`, `TryLoadAnchorsAsync`,
+    and `TrySaveAnchorAsync` now correctly return a completed Awaitable if you pass
+    them an input array of 0 anchors.\n- Fixed `MetaOpenXRAnchorSubsystem` so that
+    `TryEraseAnchorsAsync`, `TryLoadAnchorsAsync`, and `TrySaveAnchorsAsync` now
+    correctly complete their erase, load, or save operations, respectively, even
+    if the OpenXR runtime fails to enable required components on one or more anchors."}'
+  assetStore:
+    productId: 
+  fingerprint: a8b13ad920dde02e45d207de8c654a93273a6b3f
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.2.1
+    minimumUnityVersion: 6000.0.0a1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.xr.openxr@1.15.1
   testable: 0
   isDirectDependency: 1
@@ -2249,12 +2242,14 @@ m_ResolvedPackages:
     - 1.16.0-pre.2
     - 1.16.0
     - 1.16.1
+    - 1.17.0-pre.1
     compatible:
     - 1.15.1
     - 1.16.0-pre.1
     - 1.16.0-pre.2
     - 1.16.0
     - 1.16.1
+    - 1.17.0-pre.1
     recommended: 1.15.1
     deprecated: []
   dependencies:
@@ -5550,6 +5545,441 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
+- packageId: com.unity.xr.arfoundation@6.3.0
+  testable: 0
+  isDirectDependency: 1
+  version: 6.3.0
+  source: 1
+  resolvedPath: C:\Users\amirc\Unity Projects\Tiltan VR Final Project\Library\PackageCache\com.unity.xr.arfoundation@eb22901894ff
+  assetPath: Packages/com.unity.xr.arfoundation
+  name: com.unity.xr.arfoundation
+  displayName: AR Foundation
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: AR Foundation enables you to create multi-platform augmented reality
+    (AR) apps with Unity. To learn more about AR Foundation, click the Documentation
+    link above.
+  errors: []
+  versions:
+    all:
+    - 1.0.0-preview.12
+    - 1.0.0-preview.13
+    - 1.0.0-preview.14
+    - 1.0.0-preview.17
+    - 1.0.0-preview.18
+    - 1.0.0-preview.19
+    - 1.0.0-preview.20
+    - 1.0.0-preview.22
+    - 1.1.0-preview.6
+    - 1.5.0-preview.2
+    - 1.5.0-preview.5
+    - 1.5.0-preview.6
+    - 1.5.0-preview.7
+    - 2.0.2
+    - 2.1.0-preview.2
+    - 2.1.0-preview.3
+    - 2.1.1
+    - 2.1.3
+    - 2.1.4
+    - 2.1.8
+    - 2.1.10
+    - 2.1.14
+    - 2.1.16
+    - 2.1.18
+    - 2.1.19
+    - 2.2.0-preview.2
+    - 2.2.0-preview.3
+    - 2.2.0-preview.6
+    - 3.0.0-preview.1
+    - 3.0.0-preview.2
+    - 3.0.0-preview.3
+    - 3.0.0-preview.4
+    - 3.0.0-preview.6
+    - 3.0.1
+    - 3.1.0-preview.1
+    - 3.1.0-preview.3
+    - 3.1.0-preview.4
+    - 3.1.0-preview.6
+    - 3.1.0-preview.7
+    - 3.1.0-preview.8
+    - 3.1.3
+    - 3.1.5
+    - 3.1.6
+    - 3.1.10
+    - 4.0.0-preview.1
+    - 4.0.0-preview.3
+    - 4.0.2
+    - 4.0.8
+    - 4.0.9
+    - 4.0.10
+    - 4.0.12
+    - 4.1.0-preview.1
+    - 4.1.0-preview.2
+    - 4.1.0-preview.3
+    - 4.1.0-preview.5
+    - 4.1.0-preview.6
+    - 4.1.0-preview.7
+    - 4.1.0-preview.9
+    - 4.1.0-preview.10
+    - 4.1.0-preview.11
+    - 4.1.0-preview.12
+    - 4.1.0-preview.13
+    - 4.1.1
+    - 4.1.3
+    - 4.1.5
+    - 4.1.7
+    - 4.1.9
+    - 4.1.10
+    - 4.1.12
+    - 4.1.13
+    - 4.2.0-pre.2
+    - 4.2.0-pre.3
+    - 4.2.0-pre.4
+    - 4.2.0-pre.5
+    - 4.2.0-pre.7
+    - 4.2.0-pre.8
+    - 4.2.0-pre.9
+    - 4.2.0-pre.10
+    - 4.2.0-pre.12
+    - 4.2.0
+    - 4.2.1
+    - 4.2.2
+    - 4.2.3
+    - 4.2.6
+    - 4.2.7
+    - 4.2.8
+    - 4.2.9
+    - 4.2.10
+    - 5.0.0-pre.5
+    - 5.0.0-pre.6
+    - 5.0.0-pre.7
+    - 5.0.0-pre.8
+    - 5.0.0-pre.9
+    - 5.0.0-pre.12
+    - 5.0.0-pre.13
+    - 5.0.2
+    - 5.0.3
+    - 5.0.4
+    - 5.0.5
+    - 5.0.6
+    - 5.0.7
+    - 5.1.0-pre.1
+    - 5.1.0-pre.2
+    - 5.1.0-pre.3
+    - 5.1.0-pre.4
+    - 5.1.0-pre.6
+    - 5.1.0-pre.8
+    - 5.1.0-pre.9
+    - 5.1.0-pre.10
+    - 5.1.0
+    - 5.1.1
+    - 5.1.2
+    - 5.1.3
+    - 5.1.4
+    - 5.1.5
+    - 5.1.6
+    - 5.2.0
+    - 6.0.0-pre.3
+    - 6.0.0-pre.4
+    - 6.0.0-pre.5
+    - 6.0.0-pre.6
+    - 6.0.0-pre.7
+    - 6.0.0-pre.8
+    - 6.0.1
+    - 6.0.2
+    - 6.0.3
+    - 6.0.4
+    - 6.0.5
+    - 6.0.6
+    - 6.1.0-pre.1
+    - 6.1.0-pre.2
+    - 6.1.0-pre.3
+    - 6.1.0-pre.4
+    - 6.1.0-pre.5
+    - 6.1.0
+    - 6.1.1
+    - 6.2.0-pre.1
+    - 6.2.0-pre.2
+    - 6.2.0-pre.3
+    - 6.2.0-pre.4
+    - 6.2.0
+    - 6.2.1
+    - 6.3.0-pre.1
+    - 6.3.0-pre.2
+    - 6.3.0
+    - 6.3.1
+    - 6.3.2
+    - 6.4.0-pre.1
+    - 6.4.0
+    - 6.4.1
+    compatible:
+    - 6.2.0
+    - 6.2.1
+    - 6.3.0-pre.1
+    - 6.3.0-pre.2
+    - 6.3.0
+    - 6.3.1
+    - 6.3.2
+    - 6.4.0-pre.1
+    - 6.4.0
+    - 6.4.1
+    recommended: 6.2.1
+    deprecated: []
+  dependencies:
+  - name: com.unity.ugui
+    version: 2.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.inputsystem
+    version: 1.6.3
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.xr.core-utils
+    version: 2.5.1
+  - name: com.unity.xr.management
+    version: 4.4.0
+  - name: com.unity.editorcoroutines
+    version: 1.0.0
+  - name: com.unity.modules.particlesystem
+    version: 1.0.0
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.ugui
+    version: 2.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.inputsystem
+    version: 1.14.2
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.3.2
+  - name: com.unity.xr.core-utils
+    version: 2.5.3
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.xr.management
+    version: 4.5.1
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.12
+  - name: com.unity.editorcoroutines
+    version: 1.0.0
+  - name: com.unity.modules.particlesystem
+    version: 1.0.0
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  keywords:
+  - xreditorsubsystem
+  - xr
+  - ar
+  - augmented
+  - mixed
+  - reality
+  - foundation
+  - core
+  - subsystem
+  - simulation
+  - visualscripting
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638951150915470000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@6.3/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
+    revision: ff2067cc204bbcc8e33cc7f4ab420a5a5f5ad0cd
+    path: 
+  unityLifecycle:
+    version: 6.2.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Added\n\n- Added a static property `XRResultStatus.unqualifiedSuccess`.\n\n###
+    Fixed\n\n- Fixed the XR Environment view so that it no longer sets the title
+    of the Scene view to null if you launch the Editor with the XR Environment overlay
+    open. ([ARFB-592](https://issuetracker.unity3d.com/issues/installing-ar-foundation-package-corrupts-scene-view-tab-text))\n-
+    Fixed the XR Environment overlay so that it no longer causes \"Unable to load
+    the Icon\" errors in the Console when AR Foundation is first installed to a project.
+    ([ARFB-593](https://issuetracker.unity3d.com/issues/unable-to-load-the-icon-errors-are-thrown-in-the-console-after-installing-ar-foundation-package))"}'
+  assetStore:
+    productId: 
+  fingerprint: eb22901894ff61f03cb5e2592a25f1668dbd3af9
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 6.2.0
+    minimumUnityVersion: 6000.0.0a1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.xr.compositionlayers@2.1.1
+  testable: 0
+  isDirectDependency: 0
+  version: 2.1.1
+  source: 1
+  resolvedPath: C:\Users\amirc\Unity Projects\Tiltan VR Final Project\Library\PackageCache\com.unity.xr.compositionlayers@437b07576726
+  assetPath: Packages/com.unity.xr.compositionlayers
+  name: com.unity.xr.compositionlayers
+  displayName: XR Composition Layers
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Support for Provider based XR SDK Composition Layers.
+  errors: []
+  versions:
+    all:
+    - 0.5.0
+    - 0.6.0
+    - 1.0.0
+    - 2.0.0
+    - 2.1.0
+    - 2.1.1
+    - 2.2.0
+    - 2.3.0
+    compatible:
+    - 2.1.1
+    - 2.2.0
+    - 2.3.0
+    recommended: 2.1.1
+    deprecated: []
+  dependencies:
+  - name: com.unity.inputsystem
+    version: 1.6.3
+  - name: com.unity.xr.core-utils
+    version: 2.2.2
+  - name: com.unity.xr.management
+    version: 4.0.1
+  resolvedDependencies:
+  - name: com.unity.inputsystem
+    version: 1.14.2
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.xr.core-utils
+    version: 2.5.3
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.xr.management
+    version: 4.5.1
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.12
+  keywords:
+  - xr
+  - composition
+  - layers
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638949356995040000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.compositionlayers@2.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/xr.sdk.compositionlayers.git
+    revision: bda077699c34df46c38452128b80631070022ad9
+    path: 
+  unityLifecycle:
+    version: 2.1.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Added\n* Added Right-eye configuration support
+    to the Stereo Projection Layer.\n\n### Fixed\n* Fixed `CompositionLayer`''s `LayerType`
+    property to not ask the user twice to add an extension when set to anything other
+    than `[Empty]` if the user chooses `No`.\n* Fixed `NullReferenceException` when
+    adding a Source Textures component to an empty GameObject.\n* Fixed shader warnings."}'
+  assetStore:
+    productId: 
+  fingerprint: 437b0757672654e5f9311c728f02727096feadfd
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.1.1
+    minimumUnityVersion: 2022.3.11f1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.mathematics@1.3.2
   testable: 0
   isDirectDependency: 0
@@ -7015,6 +7445,7 @@ m_ResolvedPackages:
     - 2.6.0-pre.4
     - 2.6.2
     - 2.6.3
+    - 2.6.4
     compatible:
     - 2.5.7
     - 2.6.0-exp.2
@@ -7022,6 +7453,7 @@ m_ResolvedPackages:
     - 2.6.0-pre.4
     - 2.6.2
     - 2.6.3
+    - 2.6.4
     recommended: 2.5.7
     deprecated: []
   dependencies:

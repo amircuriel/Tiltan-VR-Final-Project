@@ -410,9 +410,9 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARAnalytics/ARAnalyticsConstants.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARAnalytics/AREditorAnalyticsEvent.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARAnalytics/AssemblyInfo.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARAnalytics/ARAnalyticsConstants.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARAnalytics/AREditorAnalyticsEvent.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARAnalytics/AssemblyInfo.cs"
 -langversion:9.0
 /deterministic
 /optimize-

@@ -141,9 +141,11 @@
 -define:TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER
 -define:USE_INPUT_SYSTEM_POSE_CONTROL
 -define:USE_STICK_CONTROL_THUMBSTICKS
+-define:OVR_DISABLE_HAND_PINCH_BUTTON_MAPPING
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -define:UNITY_EDITOR_ONLY_COMPILATION
+-define:UNITY_META_QUEST
 -r:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.AccessibilityModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.AdaptivePerformanceModule.dll"
@@ -422,17 +424,17 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARSubsystems/ARBuildProcessor.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARSubsystems/BuildAssetBundlesWindow.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARSubsystems/BuildHelper.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARSubsystems/GuidExtensions.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARSubsystems/PreprocessBuildEventArgs.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARSubsystems/SerializableGuidUtil.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARSubsystems/XRReferenceImageLibraryBuildProcessor.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARSubsystems/XRReferenceImageLibraryEditor.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARSubsystems/XRReferenceImageLibraryExtensions.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARSubsystems/XRReferenceObjectLibraryEditor.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARSubsystems/XRReferenceObjectLibraryExtensions.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARSubsystems/ARBuildProcessor.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARSubsystems/BuildAssetBundlesWindow.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARSubsystems/BuildHelper.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARSubsystems/GuidExtensions.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARSubsystems/PreprocessBuildEventArgs.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARSubsystems/SerializableGuidUtil.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARSubsystems/XRReferenceImageLibraryBuildProcessor.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARSubsystems/XRReferenceImageLibraryEditor.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARSubsystems/XRReferenceImageLibraryExtensions.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARSubsystems/XRReferenceObjectLibraryEditor.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARSubsystems/XRReferenceObjectLibraryExtensions.cs"
 -langversion:9.0
 /deterministic
 /optimize-

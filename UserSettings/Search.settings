@@ -2,7 +2,7 @@ trackSelection = true
 refreshSearchWindowsInPlayMode = false
 pickerAdvancedUI = false
 fetchPreview = true
-defaultFlags = 0
+defaultFlags = 264
 keepOpen = true
 queryFolder = "Assets"
 onBoardingDoNotAskAgain = true
@@ -13,6 +13,9 @@ scopes = {
 	"picker_visibility_flags.00000000" = "0"
 	"picker_item_size.00000000" = "32"
 	"picker_inspector.00000000" = "0"
+	"last_search.66F56946" = "building blocks"
+	"OpenInspectorPreview.66F56946" = "0"
+	"currentGroup.66F56946" = "all"
 }
 providers = {
 	asset = {
@@ -69,6 +72,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"building blocks"
 	"xri left in"
 	"x"
 	"xri right"
@@ -88,15 +92,13 @@ recentSearches = [
 	"xri righ"
 	"position"
 	"xri left"
-	"xri left "
 ]
 searchItemFavorites = [
 ]
 savedSearchesSortOrder = 0
-showSavedSearchPanel = false
+showSavedSearchPanel = true
 hideTabs = false
-expandedQueries = [
-]
+expandedQueries = [-1765347274 961552606]
 queryBuilder = true
 ignoredProperties = "id;name;classname;imagecontentshash"
 helperWidgetCurrentArea = "all"

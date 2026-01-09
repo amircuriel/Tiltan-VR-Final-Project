@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.meta.xr.sdk.core": "83.0.1",
     "com.unity.ai.navigation": "2.0.9",
     "com.unity.collab-proxy": "2.9.3",
     "com.unity.device-simulator.devices": "1.0.1",
@@ -15,6 +16,7 @@
     "com.unity.visualscripting": "1.9.7",
     "com.unity.xr.arfoundation": "6.2.1",
     "com.unity.xr.hands": "1.7.2",
+    "com.unity.xr.meta-openxr": "2.3.0",
     "com.unity.xr.openxr": "1.15.1",
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.ai": "1.0.0",

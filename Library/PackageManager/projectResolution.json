@@ -9,6 +9,16 @@
     "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.8f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
+    "com.meta.xr.sdk.core@83.0.1": {
+      "name": "com.meta.xr.sdk.core",
+      "displayName": "Meta XR Core SDK",
+      "resolvedPath": "C:\\Users\\amirc\\Unity Projects\\Tiltan VR Final Project\\Library\\PackageCache\\com.meta.xr.sdk.core@06273138c40d",
+      "fingerprint": "06273138c40db89a6f0d4d2a5d4f75656f2de879",
+      "editorCompatibility": "2022.3.15f1",
+      "version": "83.0.1",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.ai.navigation@2.0.9": {
       "name": "com.unity.ai.navigation",
       "displayName": "AI Navigation",
@@ -138,16 +148,6 @@
       "source": "registry",
       "testable": false
     },
-    "com.unity.xr.arfoundation@6.2.1": {
-      "name": "com.unity.xr.arfoundation",
-      "displayName": "AR Foundation",
-      "resolvedPath": "C:\\Users\\amirc\\Unity Projects\\Tiltan VR Final Project\\Library\\PackageCache\\com.unity.xr.arfoundation@9febd5ccae7a",
-      "fingerprint": "9febd5ccae7a6e7cbeee029185edd452a91239df",
-      "editorCompatibility": "6000.0.0a1",
-      "version": "6.2.1",
-      "source": "registry",
-      "testable": false
-    },
     "com.unity.xr.hands@1.7.2": {
       "name": "com.unity.xr.hands",
       "displayName": "XR Hands",
@@ -155,6 +155,16 @@
       "fingerprint": "6361f2b63a8e1db97ee084a3438b607baa923cde",
       "editorCompatibility": "2021.3.0a1",
       "version": "1.7.2",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.xr.meta-openxr@2.3.0": {
+      "name": "com.unity.xr.meta-openxr",
+      "displayName": "Unity OpenXR Meta",
+      "resolvedPath": "C:\\Users\\amirc\\Unity Projects\\Tiltan VR Final Project\\Library\\PackageCache\\com.unity.xr.meta-openxr@a8b13ad920dd",
+      "fingerprint": "a8b13ad920dde02e45d207de8c654a93273a6b3f",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "2.3.0",
       "source": "registry",
       "testable": false
     },
@@ -467,6 +477,26 @@
       "fingerprint": "b7579e86f3b456c909fda6b875fba7ab1eeb1322",
       "editorCompatibility": "2019.4.0a1",
       "version": "2.1.12",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.xr.arfoundation@6.3.0": {
+      "name": "com.unity.xr.arfoundation",
+      "displayName": "AR Foundation",
+      "resolvedPath": "C:\\Users\\amirc\\Unity Projects\\Tiltan VR Final Project\\Library\\PackageCache\\com.unity.xr.arfoundation@eb22901894ff",
+      "fingerprint": "eb22901894ff61f03cb5e2592a25f1668dbd3af9",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "6.3.0",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.xr.compositionlayers@2.1.1": {
+      "name": "com.unity.xr.compositionlayers",
+      "displayName": "XR Composition Layers",
+      "resolvedPath": "C:\\Users\\amirc\\Unity Projects\\Tiltan VR Final Project\\Library\\PackageCache\\com.unity.xr.compositionlayers@437b07576726",
+      "fingerprint": "437b0757672654e5f9311c728f02727096feadfd",
+      "editorCompatibility": "2022.3.11f1",
+      "version": "2.1.1",
       "source": "registry",
       "testable": false
     },

@@ -141,11 +141,14 @@
 -define:TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER
 -define:USE_INPUT_SYSTEM_POSE_CONTROL
 -define:USE_STICK_CONTROL_THUMBSTICKS
+-define:OVR_DISABLE_HAND_PINCH_BUTTON_MAPPING
 -define:XR_MGMT_3_2_0_OR_NEWER
 -define:XR_MGMT_4_4_0_OR_NEWER
+-define:XR_COMPOSITION_LAYERS
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -define:UNITY_EDITOR_ONLY_COMPILATION
+-define:UNITY_META_QUEST
 -r:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.AccessibilityModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.AdaptivePerformanceModule.dll"

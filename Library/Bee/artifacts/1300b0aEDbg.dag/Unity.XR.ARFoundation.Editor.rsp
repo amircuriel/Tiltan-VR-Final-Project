@@ -141,10 +141,12 @@
 -define:TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER
 -define:USE_INPUT_SYSTEM_POSE_CONTROL
 -define:USE_STICK_CONTROL_THUMBSTICKS
+-define:OVR_DISABLE_HAND_PINCH_BUTTON_MAPPING
 -define:XRI_PRESENT
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -define:UNITY_EDITOR_ONLY_COMPILATION
+-define:UNITY_META_QUEST
 -r:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.AccessibilityModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.AdaptivePerformanceModule.dll"
@@ -430,21 +432,21 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARFoundation/Analytics/AREditorAnalytics.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARFoundation/Analytics/ARSceneAnalysis.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARFoundation/Analytics/ARUsageAnalyticsEvent.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARFoundation/Analytics/Hooks/BuildHook.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARFoundation/Analytics/Hooks/SceneHook.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARFoundation/ARCameraBackgroundEditor.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARFoundation/AROcclusionManagerEditor.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARFoundation/ARSceneValidator.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARFoundation/ARSessionEditor.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARFoundation/ARShaderOcclusionEditor.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARFoundation/AssemblyInfo.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARFoundation/CreateUtils.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARFoundation/PlaneDetectionModeAttributeDrawer.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARFoundation/SceneUtils.cs"
-"Library/PackageCache/com.unity.xr.arfoundation@9febd5ccae7a/Editor/ARFoundation/XROriginCreateUtil.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARFoundation/Analytics/AREditorAnalytics.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARFoundation/Analytics/ARSceneAnalysis.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARFoundation/Analytics/ARUsageAnalyticsEvent.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARFoundation/Analytics/Hooks/BuildHook.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARFoundation/Analytics/Hooks/SceneHook.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARFoundation/ARCameraBackgroundEditor.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARFoundation/AROcclusionManagerEditor.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARFoundation/ARSceneValidator.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARFoundation/ARSessionEditor.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARFoundation/ARShaderOcclusionEditor.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARFoundation/AssemblyInfo.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARFoundation/CreateUtils.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARFoundation/PlaneDetectionModeAttributeDrawer.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARFoundation/SceneUtils.cs"
+"Library/PackageCache/com.unity.xr.arfoundation@eb22901894ff/Editor/ARFoundation/XROriginCreateUtil.cs"
 -langversion:9.0
 /deterministic
 /optimize-
