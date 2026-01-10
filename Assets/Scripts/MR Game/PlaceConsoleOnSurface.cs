@@ -7,6 +7,7 @@ public class PlaceConsoleOnSurface : MonoBehaviour
     [Header("References")]
     [SerializeField] private MRRoomBootstrapper _bootstrapper;
     [SerializeField] private Transform _aimOrigin; // controller or hand aim transform
+    [SerializeField] private VRGun _gun;
 
     [Header("Prefabs")]
     [SerializeField] private GameObject _ghostPrefab;
@@ -14,7 +15,9 @@ public class PlaceConsoleOnSurface : MonoBehaviour
 
     [Header("Placement")]
     [SerializeField] private float _maxDistance = 4f;
-    [SerializeField] private KeyCode _editorConfirmKey = KeyCode.Space; // for quick editor testing
+    
+    [Header("Input")]
+    [SerializeField] private InputActionProperty _placeButtonAction;
 
     private GameObject _ghost;
     private bool _placed;
@@ -22,11 +25,22 @@ public class PlaceConsoleOnSurface : MonoBehaviour
     private void OnEnable()
     {
         _bootstrapper.RoomReady.AddListener(OnRoomReady);
+        if (_placeButtonAction.action != null)
+        {
+            _placeButtonAction.action.Enable();
+            _placeButtonAction.action.performed += PlaceConsole;
+        }
+        _gun.gameObject.SetActive(false);
     }
 
     private void OnDisable()
     {
         _bootstrapper.RoomReady.RemoveListener(OnRoomReady);
+        if (_placeButtonAction.action != null)
+        {
+            _placeButtonAction.action.performed -= PlaceConsole;
+            _placeButtonAction.action.Disable();
+        }
     }
 
     private void OnRoomReady()
@@ -42,38 +56,47 @@ public class PlaceConsoleOnSurface : MonoBehaviour
 
         MRUKRoom room = _bootstrapper.Room;
         Ray ray = new Ray(_aimOrigin.position, _aimOrigin.forward);
+        Debug.DrawRay(ray.origin, ray.direction * _maxDistance);
 
-        // 1) Try TABLE
-        var tableFilter = new LabelFilter(MRUKAnchor.SceneLabels.TABLE);
-        bool hit = room.Raycast(ray, _maxDistance, tableFilter, out var hitInfo, out var hitAnchor);
+        //Try TABLE / COUCH / BED first (non-floor horizontal surfaces)
+        var wallFilter = new LabelFilter(MRUKAnchor.SceneLabels.TABLE | MRUKAnchor.SceneLabels.COUCH | MRUKAnchor.SceneLabels.BED);
+        bool hit = room.Raycast(ray, _maxDistance, wallFilter, out var hitInfo, out var hitAnchor);
 
-        // 2) Fallback to FLOOR
+        //Fallback to FLOOR
         if (!hit)
         {
-            var floorFilter = new LabelFilter(MRUKAnchor.SceneLabels.FLOOR);
-            hit = room.Raycast(ray, _maxDistance, floorFilter, out hitInfo, out hitAnchor);
+             var floorFilter = new LabelFilter(MRUKAnchor.SceneLabels.FLOOR);
+             hit = room.Raycast(ray, _maxDistance, floorFilter, out hitInfo, out hitAnchor);
         }
 
         if (!hit) return;
 
         _ghost.transform.position = hitInfo.point;
 
-        // Align to surface. Use the surface normal if you captured it, otherwise anchor transform up.
-        Vector3 up = (hitAnchor) ? hitAnchor.transform.up : Vector3.up;
+        //Couldn't make it work in time, sorry
+        /*Vector3 up = (hitAnchor) ? hitAnchor.transform.up : Vector3.up;
         Vector3 forward = Vector3.ProjectOnPlane(_aimOrigin.forward, up).normalized;
         if (forward.sqrMagnitude < 0.001f) forward = Vector3.forward;
 
-        _ghost.transform.rotation = Quaternion.LookRotation(forward, up);
+        _ghost.transform.rotation = Quaternion.LookRotation(forward, up);*/
+    }
 
-        // Confirm placement (replace with your OVR input once you want)
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+    private void PlaceConsole(InputAction.CallbackContext obj)
+    {
+        PlaceConsole();
+    }
+
+    private void PlaceConsole()
+    {
+        if (_bootstrapper.Room.IsPositionInRoom(_ghost.transform.position) == false)
         {
-            var console = Instantiate(_consolePrefab, _ghost.transform.position, _ghost.transform.rotation);
-            Destroy(_ghost);
-            _placed = true;
-
-            // Optional: call a method on console to finish wiring
-            console.SendMessage("OnPlaced", SendMessageOptions.DontRequireReceiver);
+            Debug.LogWarning("Not in room.");
+            return;
         }
+        var console = Instantiate(_consolePrefab, _ghost.transform.position, _ghost.transform.rotation);
+        Destroy(_ghost);
+        _placed = true;
+        _gun.gameObject.SetActive(true);
+        _gun.transform.position = console.transform.position + Vector3.up;
     }
 }

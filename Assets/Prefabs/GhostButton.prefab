@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2653419811545521079, guid: 55045b274c12a424a8cde62d8258f993, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.6993508
       objectReference: {fileID: 0}
     - target: {fileID: 2653419811545521079, guid: 55045b274c12a424a8cde62d8258f993, type: 3}
       propertyPath: m_LocalRotation.w
@@ -48,14 +48,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2731621604296084919, guid: 55045b274c12a424a8cde62d8258f993, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f881d9cfe4cf6ad44bd695d979119692, type: 2}
     - target: {fileID: 2744039918971674581, guid: 55045b274c12a424a8cde62d8258f993, type: 3}
       propertyPath: m_Name
-      value: GhostButton Variant
+      value: GhostButton
       objectReference: {fileID: 0}
     - target: {fileID: 2744039918971674581, guid: 55045b274c12a424a8cde62d8258f993, type: 3}
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4682701700235107817, guid: 55045b274c12a424a8cde62d8258f993, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f881d9cfe4cf6ad44bd695d979119692, type: 2}
     - target: {fileID: 8233316729781422213, guid: 55045b274c12a424a8cde62d8258f993, type: 3}
       propertyPath: m_Layer
       value: 2

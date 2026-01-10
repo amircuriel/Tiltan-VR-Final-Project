@@ -49,9 +49,12 @@
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\AnimateHandOnInput.cs" />
     <Compile Include="Assets\Scripts\PhysicsHandProxy.cs" />
+    <Compile Include="Assets\Scripts\MR Game\MMRoomColliderConfigurator.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\ScoreUI.cs" />
+    <Compile Include="Assets\Scripts\MR Game\MRGameWaveSpawner.cs" />
     <Compile Include="Assets\Scripts\TeleportTree.cs" />
+    <Compile Include="Assets\Scripts\MR Game\WallPortalManager.cs" />
     <Compile Include="Assets\Scripts\ClayPotLauncher.cs" />
     <Compile Include="Assets\Scripts\ClayTarget.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />

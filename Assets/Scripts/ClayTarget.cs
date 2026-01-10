@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Meta.XR.MRUtilityKit;
 using UnityEngine;
 
 public interface IHittable
@@ -15,7 +16,12 @@ public class ClayTarget : MonoBehaviour, IHittable
     [SerializeField] private Collider _collider;
     [SerializeField] private MeshRenderer _meshRenderer;
     [SerializeField] private Rigidbody _rb;
+    [SerializeField] private bool _breakOnFirstHit = true;
     private bool _broken;
+    private bool _hitOnce = false;
+    private float _lastHitTime;
+
+    private LabelFilter wallFilter = new(MRUKAnchor.SceneLabels.WALL_FACE);
 
     private void OnEnable()
     {
@@ -30,6 +36,12 @@ public class ClayTarget : MonoBehaviour, IHittable
 
     private void OnCollisionEnter(Collision other)
     {
+        if (!_breakOnFirstHit && (!_hitOnce || Time.time - _lastHitTime < 0.2f))
+        {
+            _hitOnce = true;
+            _lastHitTime = Time.time;
+            return;
+        }
         Break(false);
     }
 

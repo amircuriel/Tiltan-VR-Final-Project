@@ -176,7 +176,7 @@ public class VRGun : MonoBehaviour
     
     private void OnSummonGun(InputAction.CallbackContext ctx)
     {
-        if (_interactor.isSelected) return;
+        if (_interactor.isSelected || !gameObject.activeInHierarchy) return;
         var transform1 = PlayerManager.Instance.transform;
         transform.position = transform1.position + transform1.forward * 0.3f + Vector3.up * 2;
     }
