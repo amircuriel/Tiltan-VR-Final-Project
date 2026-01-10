@@ -1,9 +1,11 @@
 # Tiltan-VR-Final-Project
-In the project are 2 games:
+In the project are 2 games, which I've built to the best of my ability to answer all sections of the final brief:
 
-1. The VR Game is a skit-shooting game where you need to shoot clay pots with your rifle. You move between stations by teleporting to a new fixed position.
+1. The VR Game is a skit-shooting game where you need to shoot flying clay pots with your rifle. You move between stations by teleporting to a new fixed position. The pots are launched at random pitchs and angles, and you need to shoot at least 10 out of 30 to win the game. **Object Interactivity** includes pressing a "physical" button and wielding/manipulating a physical gun.
 
-2. The MR game is also a skit-shooting game, but now placed in your room, with PORTALS THAT ARE RANDOMLY PLACED ON YOUR ROOM'S WALLS, which shoot bouncing pots all over the place.
+3. The MR game is also a skit-shooting game like the first, but now taking place in your room. The MR elements include manually placing the start button on your table, and randomly generating portals on the room's walls for the pots to come out of (using the Meta MR SDK plugins and components, detailed below). The pots also bounce, which leads to a fun and different experience than to first game.
+
+Both game scenes are found in the "Scenes" folder in the project root. Unfortunately, I hadn't the time to add a main menu or a reset button, so simply restart the game in the editor to play again.
 
 IMPORTANT: Since I did not have access to a VR Headset with the SDK required to scan & auto-generate a room, I created the entire MR game "blind", meaning I had no way to test it with the actual hardware.
 
