@@ -70,7 +70,7 @@ public class WallPortalManager : SingletonMonoBehaviour<WallPortalManager>
             Vector3 worldPos = wall.transform.TransformPoint(localPos);
 
             // Push portal slightly off the wall so it doesn't z-fight
-            Vector3 outDir = -wall.transform.forward; // flip if needed
+            Vector3 outDir = wall.transform.forward; // flip if needed
             worldPos += outDir * _portalDistanceFromWall;
 
             Quaternion rot = Quaternion.LookRotation(outDir, wall.transform.up);
