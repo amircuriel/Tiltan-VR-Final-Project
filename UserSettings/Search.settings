@@ -13,9 +13,9 @@ scopes = {
 	"picker_visibility_flags.00000000" = "0"
 	"picker_item_size.00000000" = "32"
 	"picker_inspector.00000000" = "0"
-	"last_search.66F56946" = "building blocks"
+	"last_search.66F56946" = "interaction"
 	"OpenInspectorPreview.66F56946" = "0"
-	"currentGroup.66F56946" = "all"
+	"currentGroup.66F56946" = "_group_provider_Files"
 }
 providers = {
 	asset = {
@@ -72,6 +72,14 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"interaction"
+	"inte"
+	"Comprehensive Interaction"
+	"passthrough"
+	"pas"
+	"mruk."
+	"mruk.is"
+	"m"
 	"building blocks"
 	"xri left in"
 	"x"
@@ -84,14 +92,6 @@ recentSearches = [
 	"activate v"
 	"xri left interaction/select v"
 	"activate va"
-	"xri left interaction/"
-	"xri left i"
-	"xri right interaction/"
-	"xri right "
-	"xri right/r"
-	"xri righ"
-	"position"
-	"xri left"
 ]
 searchItemFavorites = [
 ]
