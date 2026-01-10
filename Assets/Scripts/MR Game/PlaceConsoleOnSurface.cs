@@ -1,8 +1,9 @@
 using Meta.XR.MRUtilityKit;
+using Meta.XR.MRUtilityKit.SceneDecorator;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlaceConsoleOnSurface : MonoBehaviour
+public class PlaceConsoleOnSurface : SingletonMonoBehaviour<PlaceConsoleOnSurface>
 {
     [Header("References")]
     [SerializeField] private MRRoomBootstrapper _bootstrapper;
@@ -21,6 +22,8 @@ public class PlaceConsoleOnSurface : MonoBehaviour
 
     private GameObject _ghost;
     private bool _placed;
+    
+    public GameObject Console { get; private set;}
 
     private void OnEnable()
     {
@@ -93,10 +96,10 @@ public class PlaceConsoleOnSurface : MonoBehaviour
             Debug.LogWarning("Not in room.");
             return;
         }
-        var console = Instantiate(_consolePrefab, _ghost.transform.position, _ghost.transform.rotation);
+        Console = Instantiate(_consolePrefab, _ghost.transform.position, _ghost.transform.rotation);
         Destroy(_ghost);
         _placed = true;
         _gun.gameObject.SetActive(true);
-        _gun.transform.position = console.transform.position + Vector3.up;
+        _gun.transform.position = Console.transform.position;
     }
 }

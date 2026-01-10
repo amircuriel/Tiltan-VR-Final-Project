@@ -119,37 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &31220544
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 31220545}
-  m_Layer: 0
-  m_Name: Camera Offset
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &31220545
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 31220544}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1176, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2049669592}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &34122424
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,15 +583,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5618556046422172174, guid: 74dbf1389e20166489de9e674b75a0e7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5618556046422172174, guid: 74dbf1389e20166489de9e674b75a0e7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5618556046422172174, guid: 74dbf1389e20166489de9e674b75a0e7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5618556046422172174, guid: 74dbf1389e20166489de9e674b75a0e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1427,7 +1396,7 @@ MonoBehaviour:
   _heightNormalized: 0.6
   _sideOffsetNormalized: 0.25
   _edgePadding: 0.15
-  _portalDistanceFromWall: 0.2
+  _portalDistanceFromWall: 0.1
 --- !u!1 &554274777
 GameObject:
   m_ObjectHideFlags: 0
@@ -2246,8 +2215,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010271271}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2260,7 +2229,7 @@ Transform:
   - {fileID: 1924333205}
   - {fileID: 1975755308}
   m_Father: {fileID: 2049669592}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &1044944447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2341,7 +2310,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053096302}
-  m_LocalRotation: {x: 0.35151488, y: 0, z: 0, w: 0.9361824}
+  m_LocalRotation: {x: -0.20022298, y: 0, z: 0, w: 0.9797504}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2350,10 +2319,10 @@ RectTransform:
   - {fileID: 195286578}
   - {fileID: 1097373549}
   m_Father: {fileID: 1097229794}
-  m_LocalEulerAnglesHint: {x: 41.16, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -23.1, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -137.99}
+  m_AnchoredPosition: {x: 0, y: 243.99}
   m_SizeDelta: {x: 800, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1097229793
@@ -2464,7 +2433,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 593528811}
   m_PlaneDistance: 0.34
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -2515,7 +2484,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (27 pots left)
+  m_text: (30 pots left)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -4813,7 +4782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.XR.CoreUtils::Unity.XR.CoreUtils.XROrigin
   m_Camera: {fileID: 0}
   m_OriginBaseGameObject: {fileID: 2049669585}
-  m_CameraFloorOffsetObject: {fileID: 31220544}
+  m_CameraFloorOffsetObject: {fileID: 0}
   m_RequestedTrackingOriginMode: 2
   m_CameraYOffset: 1.1176
 --- !u!4 &2049669592
@@ -4829,7 +4798,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 31220545}
   - {fileID: 1010271272}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4931,7 +4899,7 @@ MonoBehaviour:
   _lutWeight: 1
   _flipLutY: 1
   serializedSurfaceGeometry: []
-  textureOpacity_: 1
+  textureOpacity_: 0.9
   edgeRenderingEnabled_: 0
   edgeColor_: {r: 1, g: 1, b: 1, a: 1}
   colorMapType: 0
@@ -4978,15 +4946,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2747381771765159075, guid: d68bfa3e8f454e94d91c87619beeb300, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0638
+      value: -0.078
       objectReference: {fileID: 0}
     - target: {fileID: 2747381771765159075, guid: d68bfa3e8f454e94d91c87619beeb300, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.959
+      value: 0.974
       objectReference: {fileID: 0}
     - target: {fileID: 2747381771765159075, guid: d68bfa3e8f454e94d91c87619beeb300, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.674
+      value: 0.271
       objectReference: {fileID: 0}
     - target: {fileID: 2747381771765159075, guid: d68bfa3e8f454e94d91c87619beeb300, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5019,6 +4987,10 @@ PrefabInstance:
     - target: {fileID: 3272843174183325209, guid: d68bfa3e8f454e94d91c87619beeb300, type: 3}
       propertyPath: m_Name
       value: Pistol?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5588421161358394548, guid: d68bfa3e8f454e94d91c87619beeb300, type: 3}
+      propertyPath: m_LinearDamping
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7219696725011647621, guid: d68bfa3e8f454e94d91c87619beeb300, type: 3}
       propertyPath: m_InteractionManager

@@ -108,7 +108,7 @@ MonoBehaviour:
   _clayPrefab: {fileID: 3210444414621699212, guid: 7aae61e10117a5d45bc3710829bdd15b, type: 3}
   _audioSource: {fileID: 6768664128982333367}
   _claysPerWave: 30
-  _timeBetweenClays: 2
+  _timeBetweenClays: 3
   _waveCooldown: 1
   _forwardSpawnOffset: 0.25
   _speed: 4
@@ -382,8 +382,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2840044021575004329}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.664}
-  m_LocalScale: {x: 2.1952395, y: 22.307318, z: 2.1952395}
+  m_LocalPosition: {x: 0, y: 0, z: 0.591}
+  m_LocalScale: {x: 1.3026772, y: 13.237386, z: 1.3026772}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7915556521283461513}
@@ -393,7 +393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 24.34}
+  m_AnchoredPosition: {x: 0, y: 13.35}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7649012548565816311

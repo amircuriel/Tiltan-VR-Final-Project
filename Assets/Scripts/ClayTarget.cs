@@ -17,9 +17,10 @@ public class ClayTarget : MonoBehaviour, IHittable
     [SerializeField] private MeshRenderer _meshRenderer;
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private bool _breakOnFirstHit = true;
+    [SerializeField] private int _maxHits = 3;
     private bool _broken;
-    private bool _hitOnce = false;
     private float _lastHitTime;
+    private int _timesHit;
 
     private LabelFilter wallFilter = new(MRUKAnchor.SceneLabels.WALL_FACE);
 
@@ -36,9 +37,10 @@ public class ClayTarget : MonoBehaviour, IHittable
 
     private void OnCollisionEnter(Collision other)
     {
-        if (!_breakOnFirstHit && (!_hitOnce || Time.time - _lastHitTime < 0.2f))
+        if (Time.time - _lastHitTime < 0.1f) return;
+        if (!_breakOnFirstHit && _timesHit < _maxHits)
         {
-            _hitOnce = true;
+            _timesHit++;
             _lastHitTime = Time.time;
             return;
         }
